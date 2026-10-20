@@ -1,0 +1,14 @@
+# Download financial market data
+yfinance
+
+# Data frames: read the CSV and calculate percentage change
+pandas
+
+# Plotting
+matplotlib
+
+# Jupyter notebook
+notebook
+
+# Python kernel
+ipykernel
