@@ -12,3 +12,6 @@ notebook
 
 # Python kernel
 ipykernel
+
+# Statistical plotting
+seaborn
