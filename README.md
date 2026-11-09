@@ -55,7 +55,7 @@ The packages are listed in `requirements.txt`:
 This notebook works through four problems based on hourly stock market data for NVIDIA, Broadcom, Arm, AMD and IBM:
 
 1. Downloading the data with `yfinance` and saving it to `data/`.
-2. Plotting the data.
+2. Plotting the percentage change of the closing prices and saving the plot to `plots/`.
 3. Creating an executable script, `stocks.py`.
 4. Automating the script with GitHub Actions.
 
