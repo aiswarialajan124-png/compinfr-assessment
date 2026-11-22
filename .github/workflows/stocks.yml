@@ -1,0 +1,33 @@
+# Run stocks.py every Wednesday morning
+name: Stocks
+
+on:
+  # Scheduled trigger: 08:00 UTC every Wednesday
+  schedule:
+    - cron: "0 8 * * 3"
+  # Also lets me start the workflow by hand from the Actions tab for testing
+  workflow_dispatch:
+
+jobs:
+  run-stocks:
+    # Temporary Linux virtual machine provided by GitHub
+    runs-on: ubuntu-latest
+
+    steps:
+      # Copy the repository onto the runner
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Install Python, matching the version used for development
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # Install the packages stocks.py needs
+      - name: Install dependancies
+        run: pip install -r requirements.txt
+
+      # Run the script directly , using its shebang line and executable permission
+      - name: Run stocks.py
+        run: ./stocks.py
