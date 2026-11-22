@@ -12,6 +12,3 @@ notebook
 
 # Python kernel
 ipykernel
-
-# Numerical arrays
-numpy

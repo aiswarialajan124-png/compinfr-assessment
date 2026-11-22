@@ -70,7 +70,6 @@ The packages are listed in `requirements.txt`:
 - [yfinance](https://github.com/ranaroussi/yfinance): downloads the stock market data.
 - [pandas](https://pandas.pydata.org/): reads the data and calculates percentage change.
 - [matplotlib](https://matplotlib.org/):plots the data
-- [numpy](https://numpy.org/): numerical arrays.
 - [notebook](https://jupyter.org/) and [ipykernel](https://ipython.readthedocs.io/en/stable/): run the Jupyter notebook.
 
 ## About the notebook 
