@@ -52,12 +52,16 @@ python stocks.py
 
 Each run adds one new timestamped CSV file to `data/` and one matching PNG file to `plots/`.
 
+## Automated runs
+The workflow in `.github/workflows/stocks.yml` runs `stocks.py` on GitHub every Wednesday at 08:00 UTC. It can also be started by hand from the Actions tab of the repository using "Run workflow". The files it creates exist only on the temporary runner and are not saved back to the repository.
+
 ## Repository structure
 - `problems.ipynb`: the notebook containing all the problems and explanations.
 - `requirements.txt`: the Python packages needed to run the notebook.
 - `data/`: downloaded stock market data, saved as CSV files named `YYYYMMDD-HHmmss.csv`using the time of the download.
 - `plots/`: plots created from the data, saved as PNG files using the same naming format.
 - `stocks.py`: an executable script that downloads the latest data and creates the plot (see "Running the script" below).
+- `.github/workflows/stocks.yml`: a GitHub Actions workflow that runs `stocks.py` every Wednesday at 08:00 UTC.
 
 ## Dependancies
 
